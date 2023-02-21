@@ -1,0 +1,908 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+:root {
+    --Prinicipal: rgb(192, 30, 12);
+    --Fundo: #121212;
+    --Branco: #fff;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 30rem;
+    font-size: 2rem;
+    width: 14rem;
+    background: var(--Fundo);
+    padding: 1.2rem;
+    color: var(--Branco);
+    border-radius: 5rem;
+}
+
+html {
+    background: #121212;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+}
+
+html::-webkit-scrollbar {
+    width: .5rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--Fundo);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--Prinicipal);
+    border-radius: 5rem;
+}
+
+.titulo {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--Prinicipal);
+}
+
+section {
+    padding: 2rem 5%;
+}
+
+.icons-btn {
+    display: inline-block;
+    margin: 1rem 0;
+    background: #fff;
+    color: var(--Prinicipal);
+    padding: .8rem 3rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto-max {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+
+.btn-com {
+    background: #181818;
+    width: 100%;
+    color: var(--Branco);
+    font-size: 1.8rem;
+    border-radius: 1rem;
+    display: inline-block;
+    padding: 1.2rem;
+}
+
+.btn-com:hover {
+    background: var(--Prinicipal);
+}
+
+
+/* ============================ Header Menu ===================== */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 2rem 2%;
+    display: flex;
+    align-items: center;
+}
+
+.header.active {
+    background: var(--Fundo);
+    box-shadow: var(--box-shadow);
+}
+
+.header .logo {
+    margin-right: auto;
+    font-size: 2.5rem;
+    color: var(--Prinicipal);
+    font-weight: bolder;
+}
+
+.header .navbar a {
+    margin-left: 2rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.header .navbar a:hover {
+    color: var(--Prinicipal);
+}
+
+.header .icons a,
+.header .icons div {
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    color: black;
+}
+
+.header .icons a:hover,
+.header .icons div:hover {
+    color: var(--Prinicipal);
+}
+
+.header .logo img {
+    margin-top: 1rem;
+    width: 10rem;
+}
+
+.header #menu-btn {
+    display: none;
+    font-size: 3.7rem;
+    color: #fff;
+}
+
+.header #nav-close {
+    font-size: 5rem;
+    cursor: pointer;
+    color: var(--black);
+    display: none;
+}
+
+
+/* ===================== Principal ============================= */
+
+.principal {
+    padding: 0;
+}
+
+.principal .box {
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-size: cover !important;
+    background-position: center !important;
+    z-index: 0;
+    padding: 2rem 5%;
+}
+
+.principal .box.segundo {
+    justify-content: flex-start;
+}
+
+.principal .central {
+    width: 100rem;
+}
+
+.principal .central .anime1 {
+    font-size: 5rem;
+    padding-left: 30rem;
+    color: orangered;
+    margin-bottom: 1rem;
+}
+
+.principal .central .anime2 {
+    padding-left: 30rem;
+    font-size: 5rem;
+    color: aqua;
+    margin-bottom: 1rem;
+}
+
+.principal .central .anime3 {
+    padding-left: 30rem;
+    font-size: 5rem;
+    color: rgba(26, 26, 149, 0.785);
+    margin-bottom: 1rem;
+}
+
+.principal .central p {
+    padding-left: 30rem;
+    font-size: 1.5rem;
+    color: var(--Branco);
+}
+
+.principal video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+
+/* ===================== Animes Principal ============================= */
+
+.animepi .container-animepi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-left: 2rem;
+}
+
+.animepi .container-animepi .box-animepi {
+    overflow: hidden;
+    border-radius: 2rem;
+    flex: 1 1 45rem;
+    display: flex;
+    height: 50%;
+    position: relative;
+}
+
+.animepi .container-animepi .box-animepi img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.animepi .container-animepi .box-animepi .texto-content {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, .7);
+    padding: 2rem;
+    padding-top: 5rem;
+    transition: all 0.5s ease;
+}
+
+.animepi .container-animepi .box-animepi:hover .texto-content {
+    top: 0;
+    transition: all 0.5s ease;
+}
+
+.animepi .container-animepi .box-animepi:hover .texto-content h3 {
+    font-size: 2.8rem;
+    color: var(--Prinicipal);
+    margin-top: 50%;
+}
+
+.animepi .container-animepi .box-animepi:hover .texto-content a {
+    margin-top: 20px;
+    color: var(--Prinicipal);
+    text-decoration: none;
+    font-size: 2.9rem;
+    background: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.animepi .container-animepi .box-animepi:hover .texto-content a i {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5rem;
+    margin-left: -0.3rem;
+}
+
+.animepi .container-animepi .box-animepi:hover .texto-content img {
+    width: 7rem;
+    height: 7rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-top: .5rem;
+    margin-left: -1.4rem;
+}
+
+
+/* ========================== Contacto-Prinipal ============= */
+
+.contactopi {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 3rem;
+}
+
+.contacto-imagem img {
+    margin-top: 8rem;
+    max-width: 100%;
+    width: 800px;
+    height: auto;
+    border-radius: 2rem;
+}
+
+.contacto-container h2 {
+    text-align: center;
+    align-items: center;
+    font-size: 3rem;
+    color: var(--Prinicipal);
+    margin-bottom: 15px;
+}
+
+.contacto-container p {
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 1.8rem;
+    margin-bottom: 4.1rem;
+}
+
+.contacto-container form {
+    position: relative;
+}
+
+.contacto-container form input,
+form textarea {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    background: #161616;
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+}
+
+.contacto-container form textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contacto-container form .enviar:hover {
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+
+.color-red {
+    color: hsl(4, 71%, 50%);
+}
+
+.color-blue {
+    color: hsl(207, 56%, 45%);
+}
+
+
+/* ======================= Footer =========================== */
+
+.footer .caixa-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-column: (minmax(25rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .caixa-container .caixa-footer {
+    padding: 1rem 0;
+}
+
+.footer .caixa-container .logo img {
+    margin-top: 1rem;
+    width: 15rem;
+}
+
+.footer .caixa-container .caixa-footer h3 {
+    font-size: 2.6rem;
+    color: var(--Branco);
+    padding: 1rem 0;
+}
+
+.footer .caixa-container .caixa-footer p {
+    font-size: 1.6rem;
+    color: var(--Branco);
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.footer .caixa-container .caixa-footer i {
+    padding-right: .5rem;
+    color: var(--Prinicipal);
+}
+
+.footer .caixa-container .caixa-footer .rede-sociais {
+    padding-top: .5rem;
+    color: var(--Prinicipal);
+}
+
+.footer .caixa-container .caixa-footer .rede-sociais a {
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 1.7rem;
+    margin-bottom: -25rem;
+    border-radius: 50%;
+    border: .1rem solid var(--Prinicipal);
+    color: #Fff;
+    margin-right: .5rem;
+    text-align: center;
+}
+
+.footer .caixa-container .caixa-footer .rede-sociais a:hover {
+    background: var(--Prinicipal);
+    color: var(--Branco);
+}
+
+.footer .caixa-container .caixa-footer .paginas {
+    font-size: 1.7rem;
+    color: var(--Branco);
+    padding: 1rem 0;
+    display: block;
+}
+
+.footer .caixa-container .caixa-footer .paginas:hover {
+    color: var(--Prinicipal);
+}
+
+.footer .caixa-container .caixa-footer .paginas:hover i {
+    padding-right: 2rem;
+}
+
+.footer .caixa-container .caixa-footer .paginas i {
+    padding-right: .5rem;
+    color: var(--Prinicipal);
+}
+
+.creditos {
+    margin-top: 3.2rem;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 2rem 1rem;
+    color: var(--Branco);
+}
+
+.creditos span {
+    color: var(--Prinicipal);
+}
+
+
+/* ====================================== Informação Naruto ======================= */
+
+.titulo-2 {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.3rem;
+    color: orangered;
+}
+
+.incial {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 3rem;
+}
+
+.imag-esquerda img {
+    margin-top: 5rem;
+    max-width: 100%;
+    margin-top: 8rem;
+    width: 430px;
+    height: auto;
+    border-radius: 2rem;
+}
+
+.text-container h2 {
+    position: relative;
+    right: 45%;
+    margin-bottom: 3rem;
+    color: orangered;
+    font-size: 2.5rem;
+    line-height: 2rem;
+}
+
+.text-container p {
+    margin-bottom: 5%;
+    position: relative;
+    font-size: 1.8rem;
+    color: var(--Branco);
+    right: 45%;
+    top: 0;
+}
+
+.historia {
+    align-items: center;
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+.resumo p {
+    padding-left: 5.5rem;
+    color: var(--Branco);
+    font-size: 1.8rem;
+}
+
+.video-trailer {
+    text-align: center;
+}
+
+.video-trailer iframe {
+    margin-top: 1rem;
+    max-width: 100%;
+    width: 700px;
+    height: 368px;
+    border-radius: 2rem;
+}
+
+.assitir {
+    padding: 2rem 5%;
+}
+
+.centro-container {
+    row-gap: 2.5rem;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.crunchyroll {
+    padding-left: 40%;
+    display: flex;
+}
+
+.crunchyroll img {
+    margin-bottom: 2rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.crunchyroll .text-aliado {
+    margin-top: 1rem;
+    margin-left: 1.2rem;
+    font-size: 2rem;
+}
+
+.crunchyroll .text-aliado a {
+    color: #F47521;
+}
+
+.crunchyroll .text-aliado a:hover {
+    color: white;
+}
+
+.crunchyroll .text-aliado-2 {
+    margin-top: 1rem;
+    margin-left: 1.2rem;
+    font-size: 2rem;
+}
+
+.crunchyroll .text-aliado-2 a {
+    color: #27F2F2;
+}
+
+.crunchyroll .text-aliado-2 a:hover {
+    color: #fff;
+}
+
+.ler-manga {
+    padding-left: 40%;
+    display: flex;
+}
+
+.ler-manga i {
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+    font-size: 3.5rem;
+    padding-top: .6rem;
+    padding-right: .1rem;
+    color: #121212;
+    border-radius: 50%;
+    background: #EEA25C;
+}
+
+.ler-manga .text-aliado {
+    margin-top: 1rem;
+    margin-left: 1.2rem;
+    font-size: 2rem;
+}
+
+.ler-manga .text-aliado a {
+    color: #EEA25C;
+}
+
+.ler-manga .text-aliado a:hover {
+    color: #fff;
+}
+
+.comentario {
+    padding: 2rem 5%;
+}
+
+.comentario .slide .texto {
+    padding: 2rem;
+    font-size: 2rem;
+    margin-left: 8rem;
+    bottom: 10rem;
+    border-radius: .5rem;
+    color: #fff;
+    line-height: 2;
+    position: relative;
+    z-index: 0;
+}
+
+.comentario .slide .texto .roxo {
+    color: purple;
+    font-size: 2rem;
+    line-height: 2;
+}
+
+.comentario .slide .texto .branco {
+    color: #fff;
+}
+
+.comentario .slide .texto .avali {
+    color: #fff;
+}
+
+.comentario .slide img {
+    height: 8.5rem;
+    width: 8.5rem;
+    border-radius: 50%;
+}
+
+
+/* ================== Media ==================================== */
+
+@media (max-width: 1600px) {
+    .header .navbar a {
+        font-size: 2.4rem;
+    }
+    .animepi .container-animepi .box-animepi:hover .texto-content h3 {
+        font-size: 3rem;
+    }
+    .animepi .container-animepi .box-animepi:hover .texto-content a {
+        font-size: 2.3rem;
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+    .row-contactipi {
+        flex-direction: column;
+    }
+    .text-container h2 {
+        right: 20rem;
+    }
+    .text-container p {
+        right: 20rem;
+    }
+}
+
+@media (max-width: 1350px) {
+    .text-container h2 {
+        right: 10rem;
+    }
+    .text-container p {
+        right: 10rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 50%;
+    }
+    .header {
+        padding: 2rem;
+    }
+    section {
+        padding: 3rem 2rem;
+    }
+    .text-container h2 {
+        right: 0;
+    }
+    .text-container p {
+        right: 0;
+    }
+    .crunchyroll .text-aliado {
+        font-size: 1.8rem;
+    }
+    .crunchyroll .text-aliado-2 {
+        font-size: 1.8rem;
+    }
+    .ler-manga .text-aliado {
+        font-size: 1.8rem;
+    }
+    .resumo p {
+        font-size: 1.5rem;
+    }
+    .imag-esquerda img {
+        padding-left: 6rem;
+        border-radius: 2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+        scroll-padding-top: 7rem;
+    }
+    .principal .box {
+        padding: 2rem;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        background-position: right !important;
+    }
+    .principal .box.segundo {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        background-position: left !important;
+    }
+    .principal .box .central {
+        text-align: center;
+    }
+    .principal .box .central h3 {
+        font-size: 4rem;
+    }
+    .principal .box .central p {
+        font-size: 2rem;
+    }
+    .animepi .container-animepi .box-animepi:hover .texto-content h3 {
+        font-size: 4.2rem;
+    }
+    .animepi .container-animepi .box-animepi:hover .texto-content a {
+        font-size: 3rem;
+    }
+    .contactopi {
+        grid-template-columns: 1fr;
+    }
+    .contacto-imagem {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .contacto-container {
+        order: 2;
+    }
+    .text-container h2 {
+        padding-top: 12rem;
+        font-size: 2rem;
+    }
+    .text-container p {
+        font-size: 1.5rem;
+    }
+    .resumo p {
+        font-size: 1.7rem;
+    }
+    .comentario .slide .texto {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 880px) {
+    .header .navbar a {
+        font-size: 2.7rem;
+    }
+    .header .logo img {
+        width: 12rem;
+        padding: 0;
+    }
+    .footer .caixa-container .caixa-footer p {
+        font-size: 1.7rem;
+    }
+    .footer .caixa-container .caixa-footer p i {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header #menu-btn {
+        display: inline-block;
+    }
+    .header .navbar {
+        position: fixed;
+        left: -110%;
+        top: 0;
+        color: #fff;
+        background: black;
+        z-index: 10000;
+        width: 35rem;
+        height: 100%;
+        transform: translateX(-);
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2rem;
+    }
+    .header .navbar.active {
+        left: 0;
+        box-shadow: 0 0 0 100vw rgba(0, 0, 0, .8);
+    }
+    .header .navbar a {
+        margin: 1rem 0;
+        font-size: 3rem;
+    }
+    .header #nav-close {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+    }
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        display: none;
+    }
+    .principal .box .central h3 {
+        font-size: 2rem;
+    }
+    .principal .box .central p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .animepi .container-animepi .box-animepi:hover .texto-content h3 {
+        font-size: 2.5rem;
+    }
+    .animepi .container-animepi .box-animepi:hover .texto-content a {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    .titulo {
+        font-size: 3rem;
+    }
+    .animepi .container-animepi .box-animepi:hover .texto-content h3 {
+        font-size: 5rem;
+    }
+    .animepi .container-animepi .box-animepi:hover .texto-content a {
+        font-size: 4.2rem;
+        margin-right: 5rem;
+    }
+    .animepi .container-animepi .box-animepi:hover .texto-content a i {
+        margin-left: 1rem;
+    }
+    .crunchyroll .text-aliado {
+        font-size: 1rem;
+    }
+    .crunchyroll .text-aliado-2 {
+        font-size: 1rem;
+    }
+    .ler-manga .text-aliado {
+        font-size: 1rem;
+    }
+    .resumo p {
+        font-size: 1rem;
+    }
+    .text-container h2 {
+        font-size: 1.3rem;
+    }
+    .text-container p {
+        font-size: 1rem;
+    }
+    .principal .box .central h3 {
+        font-size: 1.3rem;
+        margin-right: 7rem;
+    }
+    .principal .box .central p {
+        font-size: 1.3rem;
+        margin-right: 8rem;
+    }
+    .btn {
+        font-size: 1.3rem;
+        width: 10rem;
+        margin-right: 8rem;
+    }
+}
